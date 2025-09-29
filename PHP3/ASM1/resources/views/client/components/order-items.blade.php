@@ -1,0 +1,32 @@
+  <div class="card mb-3">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <a href="#" class="d-flex flex-row align-items-center text-decoration-none">
+          <div>
+            <img src="{{ asset("assets/images/products/arabica.png") }}" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+          </div>
+          <div class="ms-3">
+            <h5 class="text-truncate" style="width: 250px;">Cà phê Arabica 250g</h5>
+            <div class="small mb-0 text-truncate" style="width: 250px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, animi. Modi, necessitatibus delectus sequi quos voluptatibus blanditiis sit repellendus. Officiis illo pariatur blanditiis sint, quo natus exercitationem delectus ut autem!</div>
+          </div>
+        </a>
+        <div class="d-flex flex-row align-items-center">
+          <div class="d-flex me-4" style="width: 140px;">
+            <button class="btn btn-link px-2 border-0 bg-transparent text-black" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+              <i class="fas fa-minus"></i>
+            </button>
+
+            <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm mx-2" />
+
+            <button class="btn btn-link px-2 border-0 bg-transparent text-black" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div style="width: 120px;">
+            <h5 class="mb-0">2.000.000₫</h5>
+          </div>
+          <a href="#!"><i class="fas fa-trash text-danger"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>

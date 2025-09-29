@@ -1,0 +1,219 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#article",
+            "isPartOf": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/"
+            },
+            "author": {
+                "name": "Trần Dương Ngọc Anh Golden Bee",
+                "@id": "https://goldenbeeltd.vn/#/schema/person/89c2bc3b5501e5bfb2fbbd018d7e905c"
+            },
+            "headline": "Nên Chọn Native Hay Hybrid Mobile App? Ưu – Nhược Điểm &#038; Chi Phí",
+            "datePublished": "2025-06-30T03:39:35+00:00",
+            "dateModified": "2025-06-30T05:53:05+00:00",
+            "mainEntityOfPage": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/"
+            },
+            "wordCount": 1944,
+            "commentCount": 0,
+            "publisher": {
+                "@id": "https://goldenbeeltd.vn/#organization"
+            },
+            "image": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#primaryimage"
+            },
+            "thumbnailUrl": "https://goldenbeeltd.vn/wp-content/uploads/2025/06/lua-chon-native-app-hay-hibrid-app.jpg",
+            "articleSection": [
+                "Chia sẻ",
+                "Phần Mềm"
+            ],
+            "inLanguage": "vi",
+            "potentialAction": [
+                {
+                    "@type": "CommentAction",
+                    "name": "Comment",
+                    "target": [
+                        "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#respond"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/",
+            "url": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/",
+            "name": "Nên Chọn Native Hay Hybrid Mobile App? Ưu – Nhược Điểm & Chi Phí | Golden Bee",
+            "isPartOf": {
+                "@id": "https://goldenbeeltd.vn/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#primaryimage"
+            },
+            "image": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#primaryimage"
+            },
+            "thumbnailUrl": "https://goldenbeeltd.vn/wp-content/uploads/2025/06/lua-chon-native-app-hay-hibrid-app.jpg",
+            "datePublished": "2025-06-30T03:39:35+00:00",
+            "dateModified": "2025-06-30T05:53:05+00:00",
+            "breadcrumb": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#breadcrumb"
+            },
+            "inLanguage": "vi",
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "ImageObject",
+            "inLanguage": "vi",
+            "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#primaryimage",
+            "url": "https://goldenbeeltd.vn/wp-content/uploads/2025/06/lua-chon-native-app-hay-hibrid-app.jpg",
+            "contentUrl": "https://goldenbeeltd.vn/wp-content/uploads/2025/06/lua-chon-native-app-hay-hibrid-app.jpg",
+            "width": 2038,
+            "height": 1194
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Trang chủ",
+                    "item": "https://goldenbeeltd.vn/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Nên Chọn Native Hay Hybrid Mobile App? Ưu – Nhược Điểm &#038; Chi Phí"
+                }
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://goldenbeeltd.vn/#website",
+            "url": "https://goldenbeeltd.vn/",
+            "name": "Golden Bee",
+            "description": "Golden Bee – Dịch vụ thiết kế website, SEO, Digital Marketing uy tín tại Cần Thơ và ĐBSCL",
+            "publisher": {
+                "@id": "https://goldenbeeltd.vn/#organization"
+            },
+            "alternateName": "Golden Bee VN",
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://goldenbeeltd.vn/?s={search_term_string}"
+                    },
+                    "query-input": {
+                        "@type": "PropertyValueSpecification",
+                        "valueRequired": true,
+                        "valueName": "search_term_string"
+                    }
+                }
+            ],
+            "inLanguage": "vi"
+        },
+        {
+            "@type": [
+                "Organization",
+                "Place"
+            ],
+            "@id": "https://goldenbeeltd.vn/#organization",
+            "name": "Công ty TNHH Giải pháp Công Nghệ Thông Tin Golden Bee",
+            "alternateName": "GOLDEN BEE - IT SOLUTIONS",
+            "url": "https://goldenbeeltd.vn/",
+            "logo": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#local-main-organization-logo"
+            },
+            "image": {
+                "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#local-main-organization-logo"
+            },
+            "sameAs": [
+                "https://www.facebook.com/GoldenBeeITSolution/"
+            ],
+            "description": "Golden Bee là công ty công nghệ thông tin tại Cần Thơ chuyên cung cấp giải pháp phần mềm, thiết kế website chuẩn SEO, chuyển đổi số và các dịch vụ IT trọn gói cho doanh nghiệp. Với đội ngũ hơn 50 nhân sự giàu kinh nghiệm, Golden Bee hướng đến việc đồng hành cùng doanh nghiệp trong kỷ nguyên số.",
+            "legalName": "CÔNG TY TNHH GIẢI PHÁP CÔNG NGHỆ THÔNG TIN GOLDEN BEE",
+            "foundingDate": "2024-05-28",
+            "numberOfEmployees": {
+                "@type": "QuantitativeValue",
+                "minValue": "51",
+                "maxValue": "200"
+            },
+            "publishingPrinciples": "https://goldenbeeltd.vn/nguyen-tac-xuat-ban/",
+            "ownershipFundingInfo": "https://goldenbeeltd.vn/thong-tin-so-huu-nguon-von/",
+            "actionableFeedbackPolicy": "https://goldenbeeltd.vn/lien-he/",
+            "correctionsPolicy": "https://goldenbeeltd.vn/chinh-sach-sua-chua/",
+            "ethicsPolicy": "https://goldenbeeltd.vn/chinh-sach-dao-duc/",
+            "diversityPolicy": "https://goldenbeeltd.vn/chinh-sach-da-dang/",
+            "diversityStaffingReport": "https://goldenbeeltd.vn/bao-cao-nhan-su-da-dang/",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "10.0273045",
+                "longitude": "105.7603507"
+            },
+            "telephone": [
+                "0973747609"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "0973747609",
+                "email": "support@goldenbeeltd.vn"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                }
+            ],
+            "email": "support@goldenbeeltd.vn",
+            "taxID": "1801764908"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://goldenbeeltd.vn/#/schema/person/89c2bc3b5501e5bfb2fbbd018d7e905c",
+            "name": "Trần Dương Ngọc Anh Golden Bee",
+            "image": {
+                "@type": "ImageObject",
+                "inLanguage": "vi",
+                "@id": "https://goldenbeeltd.vn/#/schema/person/image/",
+                "url": "https://secure.gravatar.com/avatar/79cdf297d4aa36b45446569ab135235fc146396d09d1ca0880a7afec0966051f?s=96&d=mm&r=g",
+                "contentUrl": "https://secure.gravatar.com/avatar/79cdf297d4aa36b45446569ab135235fc146396d09d1ca0880a7afec0966051f?s=96&d=mm&r=g",
+                "caption": "Trần Dương Ngọc Anh Golden Bee"
+            },
+            "sameAs": [
+                "https://goldenbeeltd.vn/"
+            ],
+            "url": "https://goldenbeeltd.vn/author/anhtdn/"
+        },
+        {
+            "@type": "ImageObject",
+            "inLanguage": "vi",
+            "@id": "https://goldenbeeltd.vn/nen-chon-native-hay-hybrid-mobile-app-uu-nhuoc-diem-chi-phi/#local-main-organization-logo",
+            "url": "https://goldenbeeltd.vn/wp-content/uploads/2025/06/Logo-Golden-Bee-696-696.png",
+            "contentUrl": "https://goldenbeeltd.vn/wp-content/uploads/2025/06/Logo-Golden-Bee-696-696.png",
+            "width": 696,
+            "height": 696,
+            "caption": "Công ty TNHH Giải pháp Công Nghệ Thông Tin Golden Bee"
+        }
+    ]
+}

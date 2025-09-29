@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var sinhVien = {};
+      sinhVien.hoTen = prompt("Moi nhap ten: ");
+      sinhVien.diem = prompt("Moi nhap diem: ");
+
+      sinhVien.hienThi = function () {
+        if (this.diem >= 5) this.hocLuc = "Đậu";
+        else this.hocLuc = "Rớt";
+
+        document.write("<h3>Họ và tên: " + this.hoTen + "</h3>");
+        document.write("<h3>Điểm TB: " + this.diem + "</h3>");
+        document.write("<h3>Học lực: " + this.hocLuc + "</h3>");
+      };
+      sinhVien.hienThi();
+    </script>
+  </body>
+</html>

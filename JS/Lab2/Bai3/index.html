@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var trongLuong = prompt("Trong luong: ");
+      var chieuCao = prompt("Chieu cao: ");
+      var BMI = trongLuong / (chieuCao * chieuCao);
+
+      if (BMI < 18.5) document.write("Thieu can");
+      else if (BMI < 25) document.write("Binh thuong");
+      else if (BMI < 30) document.write("Thua can");
+      else document.write("Beo phi");
+    </script>
+  </body>
+</html>

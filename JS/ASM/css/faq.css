@@ -1,0 +1,15 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background: #f9f9f9;
+  margin-bottom: 0;
+  padding: 100px;
+  text-align: justify;
+}
+
+.content__question {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: bolder;
+}

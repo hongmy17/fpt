@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/feedback.css" />
+  </head>
+
+  <body>
+    <article class="content">
+      <h1 class="content__title">CẢM NHẬN CỦA BẠN THẾ NÀO ?</h1>
+      <br />
+      <h3>Nhấn vào ảnh để chọn</h3>
+
+      <form class="content__form">
+        <div class="content__pic-3">
+          <div class="check-group">
+            <input
+              class="btn-check"
+              id="btn-check1"
+              type="radio"
+              name="select"
+            />
+
+            <label for="btn-check1"
+              ><img src="../img/bad.jpg" class="content__image"
+            /></label>
+          </div>
+
+          <div class="check-group">
+            <input
+              class="btn-check"
+              id="btn-check2"
+              type="radio"
+              name="select"
+            />
+
+            <label for="btn-check2"
+              ><img src="../img/normal.jpeg" class="content__image"
+            /></label>
+          </div>
+
+          <div class="check-group">
+            <input
+              class="btn-check"
+              id="btn-check3"
+              type="radio"
+              name="select"
+            />
+
+            <label for="btn-check3"
+              ><img src="../img/ok.jpg" class="content__image"
+            /></label>
+          </div>
+        </div>
+
+        <div class="content__pic-2">
+          <div class="check-group">
+            <input
+              class="btn-check"
+              id="btn-check4"
+              type="radio"
+              name="select"
+            />
+
+            <label for="btn-check4"
+              ><img src="../img/good.jpg" class="content__image"
+            /></label>
+          </div>
+
+          <div class="check-group">
+            <input
+              class="btn-check"
+              id="btn-check5"
+              type="radio"
+              name="select"
+            />
+
+            <label for="btn-check5"
+              ><img src="../img/excellent.jpeg" class="content__image"
+            /></label>
+          </div>
+        </div>
+
+        <hr class="line" />
+
+        <textarea
+          id="content__form-comment"
+          rows="5"
+          placeholder="Nhận xét"
+          tabindex="1"
+        ></textarea>
+
+        <div class="btn-group">
+          <input type="reset" class="btn" />
+          <input type="button" class="btn" value="Gửi" />
+        </div>
+      </form>
+    </article>
+
+    <script src="../js/feedback.js"></script>
+  </body>
+</html>

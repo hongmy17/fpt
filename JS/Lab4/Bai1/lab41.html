@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+      function ProductCatalog(name, model, cost, quantity) {
+        this.name = name;
+        this.model = model;
+        this.cost = cost;
+        this.quantity = quantity;
+      }
+
+      arr[0] = new ProductCatalog(1, 1, 1, 1);
+      arr[1] = new ProductCatalog(2, 2, 2, 2);
+      arr[2] = new ProductCatalog(3, 3, 3, 3);
+      console.log(arr);
+      console.log(arr[2].quantity);
+      arr[1].size = "Big";
+      console.log(arr[1].size);
+    </script>
+  </body>
+</html>

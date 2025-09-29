@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = prompt("Toán hạng a: ");
+      var b = prompt("Toán hạng b: ");
+      var o = prompt("Toán tử (+, - , x, :): ");
+
+      switch (o) {
+        case "+":
+          document.write("Tổng: ", a + b);
+          break;
+        case "-":
+          document.write("Hiệu: ", a - b);
+          break;
+        case "x":
+          document.write("Tích: ", a * b);
+          break;
+        case ":":
+          document.write("Thương: ", a / b);
+          break;
+        default:
+          document.write(o + " không phải là toán tử");
+          break;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        column-gap: 5px;
+      }
+
+      .container .item {
+        padding: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>MAY TINH</h1>
+    <div class="container">
+      <input onclick="toan_hang(7)" type="button" value="7" class="item" />
+      <input onclick="toan_hang(8)" type="button" value="8" class="item" />
+      <input onclick="toan_hang(9)" type="button" value="9" class="item" />
+      <input onclick="toan_tu('+')" type="button" value="+" class="item" />
+      <input onclick="toan_hang(4)" type="button" value="4" class="item" />
+      <input onclick="toan_hang(5)" type="button" value="5" class="item" />
+      <input onclick="toan_hang(6)" type="button" value="6" class="item" />
+      <input onclick="toan_tu('-')" type="button" value="-" class="item" />
+      <input onclick="toan_hang(1)" type="button" value="1" class="item" />
+      <input onclick="toan_hang(2)" type="button" value="2" class="item" />
+      <input onclick="toan_hang(3)" type="button" value="3" class="item" />
+      <input onclick="toan_tu('x')" type="button" value="x" class="item" />
+      <input onclick="toan_hang(0)" type="button" value="0" class="item" />
+      <input onclick="lam_lai()" type="button" value="C" class="item" />
+      <input onclick="thuc_hien()" type="button" value="=" class="item" />
+      <input onclick="toan_tu(':')" type="button" value=":" class="item" />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+/* about */
+.about {
+  background: #f9f9f9;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text__title,
+.about-text__subtitle {
+  color: var(--primary-color);
+  font-family: "Chewy", cursive;
+}
+
+.about-text__title {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.about-text__subtitle {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.about-text__desc {
+  margin: 10px 0;
+}
+
+.about-video {
+  margin-left: 10px;
+  position: relative;
+}
+
+.about-video .video-control-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  transition: all 0.2s linear;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about-video .video-control-btn.active {
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: initial;
+}
+
+.about-video video {
+  padding: 20px;
+  border: 2px solid lightgray;
+}
+
+/* end about */
+
+/* gallery */
+.gallery {
+  text-align: center;
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.gallery__title {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: inline-block;
+  border-bottom: 2px double var(--primary-color);
+}
+
+.gallery__food {
+  transition: all 0.2s linear;
+  background-color: #fff;
+  width: 33%;
+  margin: 15px;
+  position: relative;
+}
+
+.gallery__food .img-toolbar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 30px;
+  transition: all 0.2s linear;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gallery__food .img-toolbar.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.gallery__food .img-toolbar .img-toolbar-icon {
+  cursor: pointer;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.gallery__food .img-toolbar .heart-icon.active {
+  color: #f00 !important;
+}
+
+.gallery__food .img-toolbar .cart-icon.active {
+  color: #fde203 !important;
+}
+
+.col-3 {
+  display: flex;
+}
+
+.col-2 {
+  display: flex;
+}
+
+.col-2 .gallery__food {
+  width: 50%;
+}
+
+.gallery__food-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.gallery__food-text {
+  padding: 20px;
+}
+
+.gallery__food-title {
+  color: var(--primary-color);
+}
+
+.gallery__food-title,
+.gallery__food-desc {
+  text-align: left;
+}
+
+.gallery__food-desc {
+  padding-top: 0;
+  margin-top: 10px;
+}
+
+.gallery__food-sale-price,
+.gallery__food-price {
+  float: right;
+  color: #000;
+  margin-left: 10px;
+}
+/* end gallery */

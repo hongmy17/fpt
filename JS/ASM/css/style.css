@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  font-family: "Signika", sans-serif;
+}
+
+:root {
+  --primary-color: #ffa400;
+}
+
+.active {
+  color: #000 !important;
+}

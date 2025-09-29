@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+}
+
+.container .stars .star {
+  font-size: 40px;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.container .stars .star.active {
+  color: yellow;
+}
+
+.container .output {
+  background: #999;
+  font-size: 20px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let von = 50,
+        count = 0;
+
+      do {
+        let x = prompt("Tai hoac xiu");
+        x.toLowerCase();
+
+        if (x !== "tai" && x !== "xiu") continue;
+        let random = Math.floor(Math.random() * 16) + 3;
+        let kq = random > 10 ? "tai" : "xiu";
+
+        if (x === kq) von += 4;
+        else von -= 5;
+        count++;
+      } while (von > 0);
+
+      alert("So luot nguoi dung da choi: " + count);
+    </script>
+  </body>
+</html>

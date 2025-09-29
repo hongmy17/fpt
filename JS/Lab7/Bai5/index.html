@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .phi-van-chuyen {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h3>DAT HANG</h3>
+      <div class="form-group">
+        San pham
+        <input type="text" />
+        <h3 class="output"></h3>
+      </div>
+
+      <div class="form-group">
+        Loai
+        <input list="loai" />
+        <datalist id="loai">
+          <option value="to">to</option>
+          <option value="nho">nho</option>
+        </datalist>
+        <h3 class="output"></h3>
+      </div>
+
+      <div class="form-group">
+        Don gia
+        <input type="text" name="don-gia" />
+        <h3 class="output"></h3>
+      </div>
+
+      <div class="form-group">
+        Noi nhan hang
+        <input type="radio" name="noi-nhan-hang" value="noiThanh" />
+        Noi thanh
+        <input type="radio" name="noi-nhan-hang" value="ngoaiThanh" />
+        Ngoai thanh
+
+        <br />
+        <div class="phi-van-chuyen">
+          Phi van chuyen
+          <input type="text" readonly placeholder="100000" />
+        </div>
+        <h3 class="output"></h3>
+      </div>
+
+      <hr />
+      <button>Dat mua</button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

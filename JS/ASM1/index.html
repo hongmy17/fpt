@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <header class="header">
+      <a target="_self" href="index.html">
+        <h1 class="header__title">PIZZA</h1>
+      </a>
+
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <a target="_self" href="index.html" class="active">TRANG CHỦ</a>
+        </li>
+
+        <li class="header__menu-item">
+          <a target="page" href="./page/about.html">GIỚI THIỆU</a>
+        </li>
+
+        <li class="header__menu-item">
+          <a target="page" href="./page/contact.html">LIÊN HỆ</a>
+        </li>
+
+        <li class="header__menu-item">
+          <a target="page" href="./page/feedback.html">GÓP Ý</a>
+        </li>
+
+        <li class="header__menu-item">
+          <a target="page" href="./page/faq.html">HỎI ĐÁP</a>
+        </li>
+
+        <li class="header__menu-item container-sub-list">
+          <div class="num-items num-items-love">0</div>
+          <a href="#">YÊU THÍCH</a>
+          <div class="wrapper">
+            <img src="./img/no_cart.png" class="no-cart-img" />
+            <ul class="sub-list love-list"></ul>
+          </div>
+        </li>
+
+        <li class="header__menu-item container-sub-list">
+          <div class="num-items num-items-cart">0</div>
+          <a href="#">GIỎ HÀNG</a>
+          <div class="wrapper">
+            <img src="./img/no_cart.png" class="no-cart-img" />
+            <ul class="sub-list cart-list"></ul>
+            <div class="wrapper-cost">Total: <span class="cost">0</span></div>
+            <button class="buy-btn">Mua</button>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <!-- content -->
+    <iframe
+      src="./page/home.html"
+      frameborder="0"
+      name="page"
+      scrolling="no"
+      class="content"
+    ></iframe>
+    <!-- end content -->
+
+    <footer class="footer">Copyright © 2084 Company Name</footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Bai 1 -->
+    <div id="slideshow">
+      <img src="./walle.jpg" />
+      <div id="slideshow-control">
+        <button id="prev">&#x2039;</button>
+        <button id="play">&#9655;</button>
+        <button id="pause">&#8718;</button>
+        <button id="next">&#x203A;</button>
+      </div>
+    </div>
+
+    <!-- bai 2 -->
+    <form id="form">
+      <div class="form-group">
+        <label for="username">Tên đăng nhập</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Nhập username"
+          autocomplete="off"
+        />
+        <p class="form-message"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <input
+          type="text"
+          id="password"
+          name="password"
+          placeholder="Nhập password"
+          autocomplete="off"
+        />
+        <p class="form-message"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="account-type">Loại tài khoản</label>
+        <select name="account-type" id="account-type">
+          <option value="">Chọn loại tài khoản</option>
+          <option value="Quản trị viên">Quản trị viên</option>
+          <option value="Nhân viên">Nhân viên</option>
+        </select>
+        <p class="form-message"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="active">Kích hoạt</label>
+        <input type="checkbox" name="active" id="active" />
+        <p class="form-message"></p>
+      </div>
+
+      <div class="form-group">
+        <label>Ngôn ngữ mặc định</label>
+        <br />
+        <div class="language-group">
+          <label for="vi">Tiếng Việt</label>
+          <input type="radio" name="language" id="vi" />
+        </div>
+        <div class="language-group">
+          <label for="en">Tiếng Anh</label>
+          <input type="radio" name="language" id="en" />
+        </div>
+        <p class="form-message"></p>
+      </div>
+
+      <button type="submit">Xac nhan</button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

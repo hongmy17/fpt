@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #form input {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper"></div>
+    <form
+      action="anotherpage.html"
+      id="form"
+      method="get"
+      onsubmit="return valForm()"
+    >
+      <input
+        type="text"
+        id="first-name"
+        name="firstName"
+        placeholder="First name"
+      />
+      <input
+        type="text"
+        id="last-name"
+        name="lastName"
+        placeholder="Last name"
+      />
+      <input type="text" id="age" name="age" placeholder="Age" />
+      <input type="submit" id="submit-btn" value="submit" />
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

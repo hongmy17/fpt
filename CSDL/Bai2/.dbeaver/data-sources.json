@@ -1,0 +1,76 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-186d9e539fb-57b9ce8bf3b626df": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "172.0.0.1",
+			"save-password": true,
+			"configuration": {
+				"host": "172.0.0.1",
+				"port": "3306",
+				"url": "jdbc:mysql://172.0.0.1:3306/",
+				"configurationType": "MANUAL",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-186d9e64d65-46ffbbaca537f06a": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "127.0.0.1",
+			"save-password": true,
+			"configuration": {
+				"host": "127.0.0.1",
+				"port": "3306",
+				"url": "jdbc:mysql://127.0.0.1:3306/",
+				"configurationType": "MANUAL",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-186d9e8dd62-5f33a76ec32e84b3": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "127.0.0.1 2",
+			"save-password": true,
+			"configuration": {
+				"host": "127.0.0.1",
+				"port": "3306",
+				"url": "jdbc:mysql://127.0.0.1:3306/",
+				"configurationType": "MANUAL",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-186d9ea5923-dcbecd89ac34bba": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "127.0.0.1 3",
+			"save-password": true,
+			"configuration": {
+				"host": "127.0.0.1",
+				"port": "3306",
+				"url": "jdbc:mysql://127.0.0.1:3306/",
+				"configurationType": "MANUAL",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

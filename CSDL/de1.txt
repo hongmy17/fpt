@@ -1,0 +1,110 @@
+CREATE DATABASE QLXM_TenDangNhap;
+USE QLXM_TenDangNhap;
+
+CREATE TABLE khachhang (
+	maKH VARCHAR(5),
+    tenKH VARCHAR(30),
+    ngaySinhKH DATE,
+    diaChiKH VARCHAR(50),
+    stdKH INT
+);
+
+CREATE TABLE xemay (
+	maXM VARCHAR(5),
+    tenXM VARCHAR(30),
+    hangSX VARCHAR(10),
+    namSX DATE,
+    dungTich INT
+);
+
+CREATE TABLE xemaykhachhang (
+	ID INT,
+    maKH VARCHAR(5),
+    maXM VARCHAR(5),
+    thoiGianBaoHanh INT,
+    giaTien INT
+);
+
+ALTER TABLE khachhang
+ADD PRIMARY KEY (maKH);
+
+ALTER TABLE xemay
+ADD PRIMARY KEY (maXM);
+
+ALTER TABLE xemaykhachhang
+ADD PRIMARY KEY (ID),
+ADD FOREIGN KEY (maKH)
+REFERENCES khachhang (maKH),
+ADD FOREIGN KEY (maXM)
+REFERENCES xemay (maXM);
+
+ALTER TABLE xemaykhachhang
+MODIFY ID INT AUTO_INCREMENT;
+
+ALTER TABLE xemay
+ADD CONSTRAINT checkDungTich
+CHECK (dungTich >= 50);
+
+INSERT INTO khachhang VALUES
+	('KH001', 'Phạm Kha Nam', '1996-03-11', 'Ninh Kiều - Cần Thơ', 0768880089),
+    ('KH002', 'Mai Thiên Vân', '1998-04-28', 'U Minh Thượng - Cà Mau', 077429015),
+    ('KH003', 'Phan Thiện Trí', '1996-09-15', 'Sa Đéc - Đồng Tháp', '0942759799'),
+    ('KH004', 'Trần Văn Châu', '1996-03-11', 'U Minh Hạ - Cà Mau', 0372564882),
+    ('KH005', 'Lê Minh Chiến', '2000-11-27', 'Ninh Kiều - Cần Thơ', 0544677188);
+
+INSERT INTO xemay VALUES
+	('XM001', 'Vision', 'Honda', '2020-03-04', 110),
+    ('XM002', 'Air Blade', 'Honda', '2023-01-15', 150),
+    ('XM003', 'Grande Hybrid', 'Yamaha', '2018-11-27', 110),
+    ('XM004', 'StarX', 'SYM', '2017-12-12', 125),
+    ('XM005', 'GSX-R150', 'Suzuki', '2017-11-24', 150);
+
+INSERT INTO xemaykhachhang (maKH, maXM, thoiGianBaoHanh, giaTien) VALUES
+	('KH001', 'XM002', 12, 470000000),
+    ('KH002', 'XM004', 24, 500000000),
+    ('KH002', 'XM003', 12, 540000000),
+    ('KH003', 'XM003', 36, 260000000),
+    ('KH005', 'XM001', 6, 330000000);
+
+SELECT * FROM khachhang
+WHERE diaChiKH LIKE '%Cà Mau%';
+
+SELECT * FROM xemay
+WHERE hangSX = 'Honda';
+
+SELECT maXM, tenXM
+FROM xemay
+WHERE namSX LIKE '2017%'
+AND dungTich >= 150;
+
+SELECT khachhang.tenKH, xemay.tenXM, xemaykhachhang.giaTien
+FROM xemaykhachhang JOIN khachhang 
+ON khachhang.maKH = xemaykhachhang.maKH
+JOIN xemay ON xemay.maXM = xemaykhachhang.maXM
+WHERE xemaykhachhang.giaTien >= 50000000;
+
+SELECT khachhang.maKH, khachhang.tenKH, 
+COUNT(xemaykhachhang.maKH) AS 'So luong'
+FROM xemaykhachhang INNER JOIN khachhang
+ON khachhang.maKH = xemaykhachhang.maKH
+GROUP BY xemaykhachhang.maKH
+HAVING COUNT(xemaykhachhang.maKH) < 2;
+
+UPDATE xemaykhachhang
+SET maKH = 'KH002'
+WHERE maKH = 'KH005'
+AND maXM ='XM001';
+
+SELECT xemay.*
+FROM xemaykhachhang
+INNER JOIN xemay
+ON xemay.maXM = xemaykhachhang.maXM
+GROUP BY xemaykhachhang.maXM
+HAVING COUNT(xemaykhachhang.maXM) = (
+    SELECT MAX(count_maXM)
+    FROM (
+      SELECT COUNT(maXM) AS count_maXM
+      FROM xemaykhachhang
+      GROUP BY maXM
+    ) AS counts
+);

@@ -1,0 +1,14 @@
+{
+  "majors": [
+    {
+      "id": "1",
+      "name": "Chuyên ngành Lập trình Web 💻",
+      "content": "Ngày nay, website là công cụ giúp doanh nghiệp giới thiệu thương hiệu, quảng bá sản phẩm, kinh doanh trực tuyến. Chuyên ngành Lập trình Web tại FPT Polytechnic đào tạo lập trình viên với công nghệ mới nhất để thiết kế, lập trình và phát triển Website chuyên nghiệp."
+    },
+    {
+      "id": "660e",
+      "name": "test",
+      "content": "test"
+    }
+  ]
+}

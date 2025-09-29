@@ -1,0 +1,1 @@
+<footer class="footer">Copyright © 2084 Company Name</footer>

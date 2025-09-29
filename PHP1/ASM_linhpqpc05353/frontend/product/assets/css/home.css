@@ -1,0 +1,130 @@
+#content {
+  overflow: hidden;
+}
+
+/* slider */
+#content .slider {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#content .slider .dot-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+}
+
+#content .slider .dot-container .dot,
+#content .slider .dot-active {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#content .slider .dot-container .dot {
+  background: #333;
+  border: 1px solid #fff;
+  margin: 0 3px 0 0;
+  cursor: pointer;
+}
+
+#content .slider .dot-active {
+  position: absolute;
+  bottom: 30px;
+  background: #fff;
+  z-index: 5;
+  transition: all 0.2s linear;
+}
+
+#content .slider .next-btn,
+#content .slider .prev-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 5px 10px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.2s linear;
+}
+
+#content .wrapper {
+  position: relative;
+  display: flex;
+  transition: all 0.2s linear;
+}
+
+#content .slider__group {
+  position: relative;
+  flex: 1 0 100%;
+}
+
+#content .slider__group-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+#content .slider__group-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content .slider__group-text .main-title {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 0 #000;
+}
+
+#content .slider__group-text .sub-title {
+  margin: 15px 0;
+}
+
+#content .slider__group-text .sub-title,
+#content .slider__group-text .desc {
+  color: #fff;
+  text-shadow: 2px 2px 0 #000;
+}
+/* end slider */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  /* home: banner */
+  #content .banner {
+    height: 200px;
+  }
+
+  /* home: slider */
+  #content .dot-container,
+  #content .dot-active {
+    bottom: 10px !important;
+  }
+}

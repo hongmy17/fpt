@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <?php 
+      include ('../assets/includes/header.php');
+    ?>
+
+    <main id="content">
+      <article class="slider">
+        <section class="dot-active"></section>
+
+        <section class="dot-container">
+          <section class="dot" data-index="0"></section>
+          <section class="dot" data-index="1"></section>
+          <section class="dot" data-index="2"></section>
+        </section>
+        <i class="fa-sharp fa-solid fa-angle-left prev-btn"></i>
+
+        <section class="wrapper">
+          <section class="slider__group">
+            <img src="../assets/images/home1.png" class="slider__group-img" />
+
+            <section class="slider__group-text">
+              <h1 class="main-title">WE MAKE PIZZA</h1>
+              <h2 class="sub-title">FRESH, CLEAN, AND DELICIOUS.</h2>
+              <h3 class="desc">
+                Praesent tincidunt neque semper elementum gravida. Donec id
+                euismod magna. Ut erat ligula, malesuada eu quam a, fringilla
+                auctor augue.
+              </h3>
+            </section>
+          </section>
+
+          <section class="slider__group">
+            <img src="../assets/images/home2.jpg" class="slider__group-img" />
+
+            <section class="slider__group-text">
+              <h1 class="main-title">WE MAKE PIZZA</h1>
+              <h2 class="sub-title">FRESH, CLEAN, AND DELICIOUS.</h2>
+              <h3 class="desc">
+                Praesent tincidunt neque semper elementum gravida. Donec id
+                euismod magna. Ut erat ligula, malesuada eu quam a, fringilla
+                auctor augue.
+              </h3>
+            </section>
+          </section>
+
+          <section class="slider__group">
+            <img src="../assets/images/home3.webp" class="slider__group-img" />
+
+            <section class="slider__group-text">
+              <h1 class="main-title">WE MAKE PIZZA</h1>
+              <h2 class="sub-title">FRESH, CLEAN, AND DELICIOUS.</h2>
+              <h3 class="desc">
+                Praesent tincidunt neque semper elementum gravida. Donec id
+                euismod magna. Ut erat ligula, malesuada eu quam a, fringilla
+                auctor augue.
+              </h3>
+            </section>
+          </section>
+        </section>
+
+        <i class="fa-sharp fa-solid fa-angle-right next-btn"></i>
+      </article>
+    </main>
+
+    <!-- footer -->
+    <?php 
+      include ('../assets/includes/footer.php');
+    ?>
+    <!-- end footer -->
+
+    <script src="../assets/js/home.js"></script>
+  </body>
+</html>

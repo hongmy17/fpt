@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/faq.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <?php 
+      include ('../assets/includes/header.php');
+    ?>
+    <!-- end header -->
+
+    <main id="content">
+      <article class="grid wide faq">
+        <section class="row">
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">Làm sao để mua hàng ?</h1>
+
+            <h3 class="faq__answer">
+              Bạn có thể đến trực tiếp hoặc đặt hàng qua mạng
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">
+              Bạn có cung cấp bàn để phục vụ không ?
+            </h1>
+
+            <h3 class="faq__answer">
+              Chúng tôi có khu vực ngồi để phục vụ những khách muốn dùng ngay
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">Bạn có phục vụ thuần chay không ?</h1>
+
+            <h3 class="faq__answer">
+              Chúng tôi có thể cung cấp các bữa ăn để đáp ứng như cầu của người
+              thuần chay.
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">Bạn có bán rượu không ?</h1>
+
+            <h3 class="faq__answer">
+              Chúng tôi có bán rượu theo chai và 1 số loại bia đóng chai.
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">
+              Bạn có cung cấp bất kỳ khuyến mãi đặc biệt nào không ?
+            </h1>
+
+            <h3 class="faq__answer">
+              Có. Hãy theo dõi trang Facebook của chúng tôi để biết các mặt hàng
+              khuyến mãi đặc biệt.
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">
+              Tôi có thể đặt trước cho 1 buổi tiệc lớn không ?
+            </h1>
+
+            <h3 class="faq__answer">
+              Có, chúng tôi cung cấp dịch vụ để đáp ứng nhu cầu cá nhân và nhóm.
+            </h3>
+          </section>
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">Làm sao để mua hàng ?</h1>
+
+            <h3 class="faq__answer">
+              Bạn có thể đến trực tiếp hoặc đặt hàng qua mạng
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">
+              Bạn có cung cấp bàn để phục vụ không ?
+            </h1>
+
+            <h3 class="faq__answer">
+              Chúng tôi có khu vực ngồi để phục vụ những khách muốn dùng ngay
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">Bạn có phục vụ thuần chay không ?</h1>
+
+            <h3 class="faq__answer">
+              Chúng tôi có thể cung cấp các bữa ăn để đáp ứng như cầu của người
+              thuần chay.
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">Bạn có bán rượu không ?</h1>
+
+            <h3 class="faq__answer">
+              Chúng tôi có bán rượu theo chai và 1 số loại bia đóng chai.
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">
+              Bạn có cung cấp bất kỳ khuyến mãi đặc biệt nào không ?
+            </h1>
+
+            <h3 class="faq__answer">
+              Có. Hãy theo dõi trang Facebook của chúng tôi để biết các mặt hàng
+              khuyến mãi đặc biệt.
+            </h3>
+          </section>
+
+          <section class="col l-4 m-6 c-12 faq-group">
+            <h1 class="faq__question">
+              Tôi có thể đặt trước cho 1 buổi tiệc lớn không ?
+            </h1>
+
+            <h3 class="faq__answer">
+              Có, chúng tôi cung cấp dịch vụ để đáp ứng nhu cầu cá nhân và nhóm.
+            </h3>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <!-- footer -->
+    <?php 
+      include ('../assets/includes/footer.php');
+    ?>
+    <!-- end footer -->
+
+    <script>
+      $('.header__navbar-link[href*="faq.php"]').classList.add('active');
+    </script>
+  </body>
+</html>

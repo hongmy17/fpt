@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/signup.css" />
+  </head>
+
+  <body>
+    <form class="signup" action="../../../backend/signup.php" method="post">
+      <h1 class="title">ĐĂNG KÝ</h1>
+      <input type="text" class="signup-input" name="name" placeholder="Tên" />
+      <input
+        type="email"
+        class="signup-input"
+        name="email"
+        placeholder="Email"
+      />
+      <input
+        type="text"
+        class="signup-input"
+        name="address"
+        placeholder="Địa chỉ"
+      />
+      <input
+        type="number"
+        class="signup-input"
+        name="phone"
+        placeholder="Số điện thoại"
+      />
+      <input
+        type="password"
+        class="signup-input"
+        name="password"
+        placeholder="Mật khẩu"
+      />
+
+      <div class="signup-group">
+        <div class="signup-content">
+          <div class="checkbox-group">
+            <input type="checkbox" id="remember-checkbox" />
+            <label for="remember-checkbox"
+              >Tự động đăng nhập vào lần tới?</label
+            >
+          </div>
+          <a href="./signin.html" target="page" class="has-account"
+            >Đã có tài khoản?</a
+          >
+          <a href="./admin.html" target="page" class="is-admin">Admin?</a>
+        </div>
+
+        <button class="signup-btn">Đăng ký</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/signin.css" />
+  </head>
+
+  <body>
+    <form class="signin">
+      <h1 class="title">ĐĂNG NHẬP</h1>
+      <input type="text" class="signin-input" placeholder="Tên hoặc email" />
+      <input type="password" class="signin-input" placeholder="Mật khẩu" />
+
+      <div class="signin-group">
+        <div class="signin-content">
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              id="remember-checkbox"
+              class="checkbox-input"
+            />
+            <label for="remember-checkbox">
+              Tự động đăng nhập vào lần tới?
+            </label>
+          </div>
+
+          <a href="./signup.html" target="page" class="has-account"
+            >Chưa có tài khoản?</a
+          >
+          <a href="./admin.html" target="page" class="is-admin">Admin?</a>
+        </div>
+
+        <button class="signin-btn">Đăng nhập</button>
+      </div>
+      <a href="./forget-password.html" class="forget-pass">Quên mật khẩu?</a>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.signin {
+  width: 500px;
+  margin: auto;
+  padding: 10% 8px;
+}
+
+.signin .title {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.signin-input {
+  width: 100%;
+  outline-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  transition: all 0.2s linear;
+}
+
+.signin-input:focus {
+  outline-color: var(--primary-color);
+}
+
+.signin-btn {
+  outline: none;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-top: 20px;
+  transition: all 0.2s linear;
+}
+
+.signin-btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.signin-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 18px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-input {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.has-account,
+.is-admin {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.2s linear;
+}
+
+.has-account:hover,
+.is-admin:hover {
+  color: blue;
+}
+
+.forget-pass {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s linear;
+}
+
+.forget-pass:hover {
+  color: blue;
+}
+
+/* responsive */
+/* mobile */
+@media (max-width: 739px) {
+  .signin {
+    width: 100%;
+    padding-top: 40%;
+    padding-bottom: 40%;
+  }
+}

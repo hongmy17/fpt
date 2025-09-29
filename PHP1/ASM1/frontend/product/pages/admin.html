@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+  </head>
+
+  <body>
+    <form class="admin">
+      <h1 class="title">ADMIN</h1>
+      <input type="text" class="admin-input" placeholder="Tên hoặc email" />
+      <input type="password" class="admin-input" placeholder="Mật khẩu" />
+
+      <div class="admin-group">
+        <div class="admin-content">
+          <a href="./signin.html" target="page" class="has-account"
+            >Đăng nhập với tư cách người dùng?</a
+          >
+          <br />
+          <a href="#" class="forget-pass">Quên mật khẩu?</a>
+        </div>
+
+        <button class="admin-btn" type="button">Đăng nhập</button>
+      </div>
+    </form>
+
+    <script>
+      const adminBtn = document.querySelector(".admin-btn");
+      adminBtn.onclick = () => {
+        const curHref = this.location.href;
+        const newHref =
+          curHref.substr(0, curHref.indexOf("product/")) + "admin/index.php";
+        this.parent.location.href = newHref;
+      };
+    </script>
+  </body>
+</html>

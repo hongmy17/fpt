@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Tittle goes here",
+      "price": 25.75,
+      "content": "Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.",
+      "reviews": 24,
+      "img": "product_01.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Tittle goes here",
+      "price": 30.25,
+      "content": "Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.",
+      "reviews": 21,
+      "img": "product_02.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tittle goes here",
+      "price": 20.45,
+      "content": "Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.",
+      "reviews": 36,
+      "img": "product_03.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tittle goes here",
+      "price": 15.25,
+      "content": "Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.",
+      "reviews": 48,
+      "img": "product_04.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Tittle goes here",
+      "price": 12.5,
+      "content": "Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.",
+      "reviews": 16,
+      "img": "product_05.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Tittle goes here",
+      "price": 22.5,
+      "content": "Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.",
+      "reviews": 32,
+      "img": "product_06.jpg"
+    }
+  ]
+}

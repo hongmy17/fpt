@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zay Shop - Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+
+    <!-- Load map styles -->
+  </head>
+
+  <body>
+    <!-- Start Contact -->
+    <div class="container py-5">
+      <div class="row py-5">
+        <form class="col-md-9 m-auto">
+          <div class="row">
+            <div class="form-group col-md-6 mb-3">
+              <label for="">Name</label>
+              <input class="form-control mt-1" id="name" />
+              <span id="name-message" class="d-none text-danger"
+                >Vui long nhap ho ten</span
+              >
+            </div>
+            <div class="form-group col-md-6 mb-3">
+              <label for="">Images</label>
+              <input class="form-control mt-1" type="file" id="image" />
+              <span id="image-message" class="d-none text-danger"
+                >Vui long upload hinh anh</span
+              >
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputsubject">Price</label>
+            <input class="form-control mt-1" id="price" />
+            <span id="price-message" class="d-none text-danger"
+              >Vui long nhap gia</span
+            >
+          </div>
+          <div class="mb-3">
+            <label for="inputmessage">Content</label>
+            <textarea
+              class="form-control mt-1"
+              rows="8"
+              id="content"
+            ></textarea>
+            <span id="content-message" class="d-none text-danger"
+              >Vui long nhap noi dung</span
+            >
+          </div>
+          <div class="row">
+            <div class="col text-end mt-2">
+              <button
+                type="button"
+                onclick="save()"
+                class="btn btn-success btn-lg px-3"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <script src="assets/js/axios.js"></script>
+    <script src="assets/js/edit.js"></script>
+  </body>
+</html>

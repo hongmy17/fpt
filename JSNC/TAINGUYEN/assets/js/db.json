@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Gym Weight",
+      "img": "feature_prod_01.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.",
+      "review": 24,
+      "price": 240
+    },
+    {
+      "id": "2",
+      "name": "Cloud Nike Shoes",
+      "img": "feature_prod_02.jpg",
+      "content": "Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.",
+      "review": 48,
+      "price": 480
+    },
+    {
+      "id": "3",
+      "name": "Summer Addides Shoes",
+      "img": "feature_prod_03.jpg",
+      "content": "Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.",
+      "review": 74,
+      "price": 360
+    }
+  ]
+}

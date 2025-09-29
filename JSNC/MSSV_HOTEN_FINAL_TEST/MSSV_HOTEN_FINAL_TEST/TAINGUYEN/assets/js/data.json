@@ -1,0 +1,39 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "name": "test",
+      "content": "Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.",
+      "date": "24 September 2021",
+      "img": "blog-post-02.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Lorem Ipsum Dolor Sit Amei Eiusmod Tempor",
+      "content": "Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.",
+      "date": "24 September 2021",
+      "img": "blog-post-03.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Lorem Ipsum Dolor Sit Amei Eiusmod Tempor",
+      "content": "Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.",
+      "date": "24 September 2021",
+      "img": "blog-post-04.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Lorem Ipsum Dolor Sit Amei Eiusmod Tempor",
+      "content": "Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.",
+      "date": "24 September 2021",
+      "img": "blog-post-04.jpg"
+    },
+    {
+      "id": "4a54",
+      "img": "kmdslkm",
+      "name": "lkj",
+      "date": "lkdsmglkds",
+      "content": "ksmgd"
+    }
+  ]
+}

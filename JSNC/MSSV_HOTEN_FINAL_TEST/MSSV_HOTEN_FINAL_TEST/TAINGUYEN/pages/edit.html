@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lập trình JAVASCRIPT Nâng Cao</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/templatemo-digimedia-v3.css" />
+  </head>
+
+  <body>
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div
+              class="section-heading wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <h4>Add The Data You Want <em>Now</em></h4>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div
+            class="col-lg-12 wow fadeInUp"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <form id="contact">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="fill-form">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <input id="name" />
+                          <span id="name-message" class="d-none text-danger"
+                            >Vui long nhap ho ten</span
+                          >
+                        </fieldset>
+                        <fieldset>
+                          <input id="date" />
+                          <span id="date-message" class="d-none text-danger"
+                            >Vui long nhap ngay</span
+                          >
+                        </fieldset>
+                        <fieldset>
+                          <input id="img" />
+                          <span id="img-message" class="d-none text-danger"
+                            >Vui long chon anh</span
+                          >
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <textarea id="content"></textarea>
+                          <span id="content-message" class="d-none text-danger"
+                            >Vui long nhap noi dung</span
+                          >
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <button
+                            type="button"
+                            onclick="save()"
+                            class="main-button"
+                          >
+                            Submit Now
+                          </button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/axios.js"></script>
+    <script src="../assets/js/edit.js"></script>
+  </body>
+</html>

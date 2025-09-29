@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <section class="header__contact">
+        <ul class="header__contact-list">
+          <li class="header__contact-item">
+            <i class="fa-solid fa-phone"></i> +1234567890
+          </li>
+          <li class="header__contact-item">
+            <i class="fa-solid fa-envelope"></i> demo@gmail.com
+          </li>
+          <li class="header__contact-item">
+            long established fact that a reader will be
+          </li>
+        </ul>
+      </section>
+
+      <nav class="header__navbar">
+        <h1 class="header__navbar-logo">ROLE</h1>
+
+        <ul class="header__navbar-category hide-on-mobile-tablet">
+          <li class="header__navbar-category-item">Home</li>
+          <li class="header__navbar-category-item">About</li>
+          <li class="header__navbar-category-item">Cameras</li>
+          <li class="header__navbar-category-item">Connect Us</li>
+        </ul>
+
+        <section class="header__navbar-search">
+          <input
+            type="search"
+            class="header__navbar-search-box"
+            placeholder="Search"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass header__navbar-search-icon"
+          ></i>
+        </section>
+
+        <button class="header__navbar-login-btn hide-on-mobile">Login</button>
+        <i class="fa-solid fa-user header__navbar-user-icon hide-on-mobile"></i>
+
+        <label
+          for="header__navbar-menu-checkbox"
+          class="header__navbar-menu-icon"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </nav>
+
+      <input type="checkbox" hidden id="header__navbar-menu-checkbox" />
+      <ul class="header__navbar-menu-list">
+        <li class="header__navbar-menu-item">Home</li>
+        <li class="header__navbar-menu-item">About</li>
+        <li class="header__navbar-menu-item">Cameras</li>
+        <li class="header__navbar-menu-item">Contact Us</li>
+        <li class="header__navbar-menu-item hide-on-tablet">Login</li>
+        <li class="header__navbar-menu-item hide-on-tablet">Sign Out</li>
+      </ul>
+    </header>
+    <!-- end header -->
+
+    <!-- banner -->
+    <section class="banner">
+      <section class="container">
+        <h1 class="banner__title">About Us</h1>
+        <section class="banner-group">
+          <p class="banner__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+            earum sequi suscipit tempore quibusdam ipsum? Fugit dolor ducimus
+            maxime totam nemo repellat quas, minus praesentium, pariatur sequi
+            cumque mollitia numquam.
+          </p>
+          <button class="banner__more-btn">Read More</button>
+        </section>
+      </section>
+
+      <div class="banner__role">ROLE</div>
+    </section>
+    <!-- end banner -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <section class="footer__content">
+        <p class="footer__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          impedit numquam laborum a sunt, maiores eaque, facilis aut atque alias
+        </p>
+
+        <h3 class="footer__contact-title">Newsletter</h3>
+        <section class="footer__contact">
+          <div class="footer__contact-icon-container">
+            <i class="footer__contact-icon fa-solid fa-location-dot"></i>
+            <i class="footer__contact-icon fa-solid fa-envelope"></i>
+            <i class="footer__contact-icon fa-solid fa-phone"></i>
+          </div>
+
+          <section class="footer__contact-submit">
+            <input
+              type="search"
+              class="footer__contact-submit-box"
+              placeholder="Enter your email"
+            />
+            <button class="footer__contact-submit-btn">Subscribe</button>
+          </section>
+
+          <div class="footer__contact-icon-container">
+            <div class="footer__contact-icon-border">
+              <i class="footer__contact-icon fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="footer__contact-icon-border">
+              <i class="footer__contact-icon fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer__contact-icon-border">
+              <i class="footer__contact-icon fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="footer__copyright">Copyright 2023 ALl Right Reserved By.</div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

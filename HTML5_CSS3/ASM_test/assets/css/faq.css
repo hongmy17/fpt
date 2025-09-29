@@ -1,0 +1,17 @@
+#content {
+  padding: 50px 0;
+}
+
+#content .faq-group:nth-child(n + 4) {
+  margin-top: 32px;
+}
+
+#content .faq__question {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#content .faq__answer {
+  text-align: justify;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #div1,
+      #div2 {
+        width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Drag and Drop</h2>
+    <p>Keo tha hinh anh giua 2 the div</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img
+        src="./logo.png"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="300"
+        height="60"
+        id="drag1"
+      />
+    </div>
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        console.log("Bat dau keo len");
+        ev.dataTransfer.setData("image", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("image");
+        ev.target.appendChild(document.getElementById(data));
+        console.log("Phan tu da duoc tha vao thanh cong");
+      }
+    </script>
+  </body>
+</html>

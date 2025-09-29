@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <nav class="grid wide">
+        <section class="row">
+          <h1 class="col l-4 m-6 c-6 header__logo">
+            <a target="page" href="./pages/home.html" class="header__logo-link"
+              >PIZZA</a
+            >
+          </h1>
+
+          <section class="col l-8 m-0 c-0 header__navbar">
+            <i class="fa-solid fa-xmark header-mobile-tablet__close-icon"></i>
+            <ul class="row header__navbar-list">
+              <li class="col l-2 m-12 c-12 header__navbar-item">
+                <a
+                  target="page"
+                  href="./pages/home.html"
+                  class="header__navbar-link active"
+                  id="home"
+                  >TRANG CHỦ</a
+                >
+              </li>
+
+              <li class="col l-2 m-12 c-12 header__navbar-item">
+                <a
+                  target="page"
+                  href="./pages/about.html"
+                  class="header__navbar-link"
+                  id="about"
+                  >GIỚI THIỆU</a
+                >
+              </li>
+
+              <li class="col l-2 m-12 c-12 header__navbar-item">
+                <a
+                  target="page"
+                  href="./pages/contact.html"
+                  class="header__navbar-link"
+                  >LIÊN HỆ</a
+                >
+              </li>
+
+              <li class="col l-2 m-12 c-12 header__navbar-item">
+                <a
+                  target="page"
+                  href="./pages/feedback.html"
+                  class="header__navbar-link"
+                  >GÓP Ý</a
+                >
+              </li>
+
+              <li class="col l-2 m-12 c-12 header__navbar-item">
+                <a
+                  target="page"
+                  href="./pages/faq.html"
+                  class="header__navbar-link"
+                  >HỎI ĐÁP</a
+                >
+              </li>
+
+              <li class="col l-2 m-0 c-0 header__navbar-item">
+                <section class="container">
+                  <label
+                    for="header__navbar-heart-checkbox"
+                    class="container-icon"
+                  >
+                    <span class="heart-item-quantity item-quantity">0</span>
+                    <i
+                      class="fa-solid fa-heart heart-icon header__navbar-list-icon"
+                    ></i>
+                  </label>
+
+                  <label
+                    for="header__navbar-cart-checkbox"
+                    class="container-icon"
+                  >
+                    <span class="cart-item-quantity item-quantity">0</span>
+                    <i
+                      class="fa-solid fa-cart-shopping cart-icon header__navbar-list-icon"
+                    ></i>
+                  </label>
+
+                  <label for="container-option__checkbox">
+                    <img
+                      class="header__navbar-avatar"
+                      src="./assets/images/avatar.jpg"
+                      alt="avatar"
+                    />
+                  </label>
+                  <input
+                    type="checkbox"
+                    hidden
+                    id="container-option__checkbox"
+                  />
+                  <section class="container-option">
+                    <a href="#" class="container-option__link">Cài đặt</a>
+                    <a href="#" class="container-option__link"
+                      >Đắng ký/Đăng nhập</a
+                    >
+                  </section>
+                </section>
+              </li>
+
+              <li
+                class="col l-0 m-12 c-12 header__navbar-item header__navbar-more"
+              >
+                <a href="#" class="header__navbar-link">Xem thêm</a>
+              </li>
+
+              <li
+                class="col l-0 m-0 c-0 header__navbar-item header__navbar-option"
+              >
+                <a href="#" class="header__navbar-link">
+                  <label for="header__navbar-heart-checkbox"> Yêu thích </label>
+                  <span
+                    class="mobile-tablet-heart-item-quantity mobile-tablet-item-quantity"
+                    >0</span
+                  >
+                </a>
+              </li>
+
+              <li
+                class="col l-0 m-0 c-0 header__navbar-item header__navbar-option"
+              >
+                <a href="#" class="header__navbar-link">
+                  <label for="header__navbar-cart-checkbox"> Giỏ hàng </label>
+                  <span
+                    class="mobile-tablet-cart-item-quantity mobile-tablet-item-quantity"
+                    >0</span
+                  >
+                </a>
+              </li>
+
+              <li
+                class="col l-0 m-0 c-0 header__navbar-item header__navbar-option"
+              >
+                <a href="#" class="header__navbar-link">Cài đặt</a>
+              </li>
+
+              <li
+                class="col l-0 m-0 c-0 header__navbar-item header__navbar-option"
+              >
+                <a href="#" class="header__navbar-link">Đắng ký/Đăng nhập</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="col l-0 m-6 c-6 header-mobile-tablet__navbar">
+            <i class="fa-solid fa-bars header-mobile-tablet__navbar-icon"></i>
+            <section class="header-mobile-tablet__navbar-overlay"></section>
+          </section>
+
+          <input type="checkbox" hidden id="header__navbar-heart-checkbox" />
+          <section class="header__navbar-heart-list header__navbar-item-list">
+            <label for="header__navbar-heart-checkbox">
+              <i
+                class="fa-solid fa-xmark header__navbar-item-list-close-icon"
+              ></i>
+            </label>
+
+            <img
+              class="header__navbar-item-list-img header__navbar-heart-list-no-item-img"
+              src="./assets/images/no_cart.png"
+              alt="no item"
+            />
+
+            <section class="row container-item"></section>
+          </section>
+
+          <input type="checkbox" hidden id="header__navbar-cart-checkbox" />
+          <section class="header__navbar-cart-list header__navbar-item-list">
+            <label for="header__navbar-cart-checkbox">
+              <i
+                class="fa-solid fa-xmark header__navbar-item-list-close-icon"
+              ></i>
+            </label>
+
+            <img
+              class="header__navbar-item-list-img header__navbar-cart-list-no-item-img"
+              src="./assets/images/no_cart.png"
+              alt="no item"
+            />
+
+            <section class="row container-item"></section>
+
+            <span class="header__navbar-cart-cost-container"
+              >Cost: <span class="header__navbar-cart-cost">0</span></span
+            >
+            <button class="header__navbar-cart-buy-btn">Mua</button>
+          </section>
+        </section>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- content -->
+    <iframe
+      src="./pages/home.html"
+      frameborder="0"
+      scrolling="no"
+      name="page"
+      width="100%"
+    ></iframe>
+    <!-- end content -->
+
+    <!-- footer -->
+    <footer class="footer">Copyright © 2084 Company Name</footer>
+    <!-- end footer -->
+
+    <!-- announce -->
+    <section class="announce announce-no-item">
+      <i class="fa-solid fa-circle-xmark icon"></i>
+      <span class="text">Giỏ hàng trống</span>
+      <i class="fa-solid fa-xmark close-btn"></i>
+    </section>
+
+    <section class="announce announce-no-quantity">
+      <i class="fa-solid fa-circle-exclamation icon"></i>
+      <span class="text">Mời chọn số lượng</span>
+      <i class="fa-solid fa-xmark close-btn"></i>
+    </section>
+
+    <section class="overlay announce-address">
+      <section class="wrapper">
+        <input type="text" class="address" placeholder="Mời nhập địa chỉ" />
+        <button class="confirm-btn">Xác nhận</button>
+      </section>
+    </section>
+
+    <section class="overlay announce-success-buy">
+      <section class="success">
+        <i class="fa-solid fa-circle-check success-icon"></i>
+        Bạn đã đặt hàng thành công
+      </section>
+    </section>
+
+    <section class="overlay announce-success-contact">
+      <section class="wrapper">
+        <i class="fa-regular fa-face-smile smile-icon"></i>
+        <p>Cảm ơn bạn đã liên lạc</p>
+      </section>
+    </section>
+
+    <section class="overlay announce-success-feedback">
+      <section class="wrapper">
+        <i class="fa-solid fa-thumbs-up like-icon"></i>
+        <p>Cảm ơn bạn đã góp ý</p>
+      </section>
+    </section>
+
+    <section class="announce announce-no-feedback">
+      <i class="fa-solid fa-circle-exclamation icon"></i>
+      <span class="text">Mời chọn đánh giá</span>
+      <i class="fa-solid fa-xmark close-btn"></i>
+    </section>
+    <!-- end announce -->
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

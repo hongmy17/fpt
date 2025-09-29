@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button id="setData">Set Data</button>
+    <button id="getData">Get Data</button>
+    <p id="result"></p>
+
+    <script>
+      window.onload = function () {
+        let btnSetData = document.querySelector("#setData");
+        let btnGetData = document.querySelector("#getData");
+        let result = document.querySelector("#result");
+
+        btnSetData.addEventListener("click", function () {
+          localStorage.setItem("hovaten", "phan huyen trang");
+          console.log("Lay du lieu thanh cong");
+        });
+
+        btnGetData.addEventListener("click", function () {
+          console.log("Du lieu:" + localStorage.getItem("hovaten"));
+          result.innerHTML = localStorage.getItem("hovaten");
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  :root {
+    --padding: 40px;
+  }
+
+  .banner-content {
+    grid-template-columns: 1fr;
+  }
+
+  .banner__title {
+    font-size: 24px;
+  }
+
+  .content-courses__items {
+    grid-template-columns: 1fr;
+  }
+
+  .content-about__title {
+    margin-top: 10px;
+  }
+
+  .content-about__item {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+
+  .content-consuting__title {
+    font-size: 20px;
+  }
+
+  .content-consuting__btn {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .contact__img-title {
+    top: 15%;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
+    font-size: 24px;
+  }
+}

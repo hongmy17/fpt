@@ -1,0 +1,15 @@
+.custom-shape {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+  background: url("raster.svg");
+}
+
+.stroke {
+  stroke-width: 1;
+  stroke: #f00;
+}
+
+.fill {
+  fill: green;
+}

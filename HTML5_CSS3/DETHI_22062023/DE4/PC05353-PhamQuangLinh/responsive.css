@@ -1,0 +1,40 @@
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  :root {
+    --padding: 30px;
+  }
+
+  .col-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .header-logo {
+    width: 80px;
+  }
+
+  .banner-title {
+    font-size: 24px;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .content-items {
+    gap: 40px;
+    padding: 20px 0;
+    padding-top: 40px;
+  }
+
+  .sign-up-form {
+    margin-top: 20px;
+  }
+
+  .footer-contact::before,
+  .footer-contact::after {
+    display: none;
+  }
+}

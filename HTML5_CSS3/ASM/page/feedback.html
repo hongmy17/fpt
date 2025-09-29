@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="./css/feedback.css" />
+<article class="feedback">
+  <h1 class="feedback__title">CẢM NHẬN CỦA BẠN THẾ NÀO ?</h1>
+  <br />
+  <h3>Nhấn vào ảnh để chọn</h3>
+
+  <form class="feedback__form">
+    <section class="feedback__pic-3">
+      <section class="check-group">
+        <input class="btn-check" id="btn-check1" type="radio" name="select" />
+
+        <label for="btn-check1"
+          ><img src="./img/bad.jpg" class="feedback__image"
+        /></label>
+      </section>
+
+      <section class="check-group">
+        <input class="btn-check" id="btn-check2" type="radio" name="select" />
+
+        <label for="btn-check2"
+          ><img src="./img/normal.jpeg" class="feedback__image"
+        /></label>
+      </section>
+
+      <section class="check-group">
+        <input class="btn-check" id="btn-check3" type="radio" name="select" />
+
+        <label for="btn-check3"
+          ><img src="./img/ok.jpg" class="feedback__image"
+        /></label>
+      </section>
+    </section>
+
+    <section class="feedback__pic-2">
+      <section class="check-group">
+        <input class="btn-check" id="btn-check4" type="radio" name="select" />
+
+        <label for="btn-check4"
+          ><img src="./img/good.jpg" class="feedback__image"
+        /></label>
+      </section>
+
+      <section class="check-group">
+        <input class="btn-check" id="btn-check5" type="radio" name="select" />
+
+        <label for="btn-check5"
+          ><img src="./img/excellent.jpeg" class="feedback__image"
+        /></label>
+      </section>
+    </section>
+
+    <hr class="line" />
+
+    <textarea
+      id="feedback__form-comment"
+      rows="5"
+      placeholder="Nhận xét"
+      tabindex="1"
+    ></textarea>
+
+    <section class="btn-group">
+      <input type="reset" class="btn" />
+      <input type="button" class="btn" value="Gửi" />
+    </section>
+  </form>
+</article>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <section class="header__contact">
+        <div class="header__contact-item">
+          <img
+            src="./images/call-icon.png"
+            alt="call-icon"
+            class="header__contact-icon"
+          />
+          +1234567890
+        </div>
+
+        <div class="header__contact-item">
+          <img
+            src="./images/mail-icon.png"
+            alt="email-icon"
+            class="header__contact-icon"
+          />
+          demo@gmail.com
+        </div>
+
+        <div class="header__contact-item">
+          long established fact that a reader will be
+        </div>
+      </section>
+
+      <section class="header__navbar">
+        <img src="./images/logo.png" alt="header-logo" class="header__logo" />
+
+        <input type="checkbox" hidden id="header__navbar-list-checkbox" />
+        <ul class="header__navbar-list">
+          <li class="header__navbar-item">Home</li>
+          <li class="header__navbar-item">About</li>
+          <li class="header__navbar-item">Cameras</li>
+          <li class="header__navbar-item">Contact Us</li>
+        </ul>
+
+        <div class="header__search-group">
+          <input
+            type="search"
+            placeholder="Search"
+            class="header__search-box"
+          />
+          <img
+            src="./images/search-icon.png"
+            alt="search-icon"
+            class="header__search-icon"
+          />
+        </div>
+        <span class="header__login hide-on-mobile">Login</span>
+        <img
+          src="./images/user-icon.png"
+          alt="header-user-icon"
+          class="header__user-icon hide-on-mobile"
+        />
+        <label for="header__navbar-list-checkbox" class="header__bar-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </section>
+    </header>
+    <!-- end header -->
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <img src="./images/banner-bg.png" alt="banner-bg" class="banner__bg" />
+      <img src="./images/img-1.png" alt="banner-img" class="banner__img" />
+
+      <div class="banner-text">
+        <h1 class="banner__title">Using Cool Camera</h1>
+        <p class="banner__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          perferendis hic
+        </p>
+      </div>
+
+      <button class="btn banner__btn">Read More</button>
+    </section>
+    <!-- end banner -->
+
+    <!-- about -->
+    <section class="about">
+      <h1 class="title about__title">About Us</h1>
+      <div class="about-group">
+        <p class="about__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam
+          architecto tempora doloribus tempore esse iste id suscipit libero
+          officiis provident ipsum vel veritatis voluptas, cum veniam nam
+          cupiditate perferendis!
+        </p>
+        <button class="btn about__btn">Read More</button>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- gallery -->
+    <section class="gallery">
+      <div class="gallery-container">
+        <h1 class="title gallery__title">Our Camera</h1>
+        <div class="gallery-item-container">
+          <div class="gallery-item">
+            <div class="gallery-item__img-container">
+              <img
+                src="./images/img-2.png"
+                alt="item-2"
+                class="gallery-item__img"
+              />
+              <h3 class="gallery-item__img-title">Best Camera</h3>
+              <h3 class="gallery-item__img-price">
+                $ <span class="price">400</span>
+              </h3>
+              <div class="arrow-right arrow active"><</div>
+            </div>
+            <p class="gallery-item__desc hide-on-mobile">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+              facere quo voluptatum. Tempora provident molestias deleniti
+              perspiciatis facilis. Officiis quia doloribus sapiente est
+              molestias optio quam sequi fugiat recusandae impedit!
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <p class="gallery-item__desc hide-on-mobile">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+              facere quo voluptatum. Tempora provident molestias deleniti
+              perspiciatis facilis. Officiis quia doloribus sapiente est
+              molestias optio quam sequi fugiat recusandae impedit!
+            </p>
+            <div class="gallery-item__img-container white">
+              <img
+                src="./images/img-3.png"
+                alt="item-2"
+                class="gallery-item__img"
+              />
+              <h3 class="gallery-item__img-title">Best Camera</h3>
+              <h3 class="gallery-item__img-price">
+                $ <span class="price">400</span>
+              </h3>
+              <div class="arrow-left arrow">></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn gallery__btn">Read More</button>
+      </div>
+    </section>
+    <!-- end gallery -->
+
+    <!-- contact -->
+    <section class="contact">
+      <h1 class="title contact__title">Get In Touch</h1>
+      <form class="contact__form">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <input type="number" placeholder="Phone Number" />
+        <input type="text" placeholder="Type Of Camera" />
+        <input
+          type="text"
+          placeholder="Type Words Messages"
+          class="contact__form-message"
+        />
+        <button class="btn contact__form-btn">SEND</button>
+      </form>
+
+      <iframe
+        src="https://www.google.com/maps/d/u/1/embed?mid=1fYbFrrR3eRjVewT1I1Dmv2RrmQ8theM&ehbc=2E312F"
+        width="100%"
+        height="100%"
+        class="contact__map"
+      ></iframe>
+    </section>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <img
+        src="./images/footer-logo.png"
+        alt="footer-logo"
+        class="footer__logo"
+      />
+
+      <div class="footer__content white">
+        <p class="footer__desc">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente,
+          veniam beatae quidem consequuntur ipsum ut commodi reiciendis facere
+          quia! Porro consequatur ad repudiandae voluptatibus eveniet quo cumque
+          obcaecati eum iure.
+        </p>
+        <h3>Newsletter</h3>
+        <div class="footer__contact">
+          <div class="footer-icons">
+            <img
+              src="./images/map-icon.png"
+              alt="map-icon"
+              class="footer__contact-icon"
+            />
+            <img
+              src="./images/email-icon.png"
+              alt="email-icon"
+              class="footer__contact-icon"
+            />
+            <img
+              src="./images/contact-icon.png"
+              alt="contact-icon"
+              class="footer__contact-icon"
+            />
+          </div>
+
+          <div class="footer__contact-group">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="footer__contact-email"
+            />
+            <button class="btn">Subscribe</button>
+          </div>
+
+          <div class="footer-icons">
+            <img
+              src="./images/fb-icon.png"
+              alt="fb-icon"
+              class="footer__contact-icon"
+            />
+            <img
+              src="./images/twitter-icon.png"
+              alt="twitter-icon"
+              class="footer__contact-icon"
+            />
+            <img
+              src="./images/instagram-icon.png"
+              alt="instagram-icon"
+              class="footer__contact-icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        Copyright 2023 All Right Reserved By. Free html Templates Distributed by
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

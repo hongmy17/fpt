@@ -1,0 +1,40 @@
+HOME
+ABOUT US
+CONTACT
+Welcom to the us
+Với các bạn thiết kế web, có lẽ không còn xa lạ gì với HTML5. HTML5 là bản nâng cấp nhanh và mạnh hơn rất nhiều so với HTML. HTML5 là ngôn ngữ lập trình được coi là bước tiến lớn trong sự phát triển website. Nếu bạn chưa tường tận về HTML5, hãy cùng chúng tôi tìm hiểu chi tiết ở bài viết dưới đây.
+
+TÌM HIỂU THÊM...
+Lợi ích của HTML5
+HTML5 là bản nâng cấp với nhiều tính năng vượt trội so với HTML. Các điểm chính của ngôn ngữ lập trình mới này được thể hiện qua...
+
+TÌM HIỂU THÊM
+Ưu thế của HTML5
+Ưu thế của HTML5 với lập trình viên Không cần tạo cookies: Ở những phiên bản HTML trước, các lập trình viên cần phải tạo cookies để lưu các thông tin cần thiết...
+
+TÌM HIỂU THÊM
+Mối liên hệ của HTML5 với CSS3
+TML5 được coi như hạ tầng của website. Chúng không chỉ tạo thuận lợi cho các lập trình viên mà còn...
+
+TÌM HIỂU THÊM
+Phản hồi của bạn
+Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *
+
+Họ tên
+Email
+Nội dung
+GỬI
+Địa chỉ
+12345, Cần Thơ
+Email
+TeoNVPC01234@fpt.edu.vn
+Điện thoại: 0909123123
+Liên kết
+   
+TeonvPC01234 © FPT Polytechnic Cần Thơ
+
+
+
+html {
+  scroll-behavior: smooth;
+}

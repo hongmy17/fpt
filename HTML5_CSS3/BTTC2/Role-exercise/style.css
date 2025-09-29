@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: purple;
+  --width-role: 100px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* header */
+.header {
+  background-color: #fff;
+  position: relative;
+}
+
+.header__contact {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+.header__contact-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.header__navbar {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navbar-logo {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.header__navbar-category {
+  flex: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.header__navbar-category-item {
+  padding: 0 16px;
+  border-right: 2px solid #999;
+}
+
+.header__navbar-category-item:last-child {
+  border: none;
+}
+
+.header__navbar-search {
+  position: relative;
+}
+
+.header__navbar-search-box {
+  width: 250px;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #666;
+  width: 100%;
+}
+
+.header__navbar-search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: gray;
+}
+
+.header__navbar-login-btn {
+  padding: 10px 15px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__navbar-user-icon {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.header__navbar-menu-icon {
+  display: none;
+  margin-top: 2px;
+}
+
+.header__navbar-menu-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+  width: 150px;
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+}
+
+.header__navbar-menu-item {
+  margin-top: 16px;
+}
+
+.header__navbar-menu-item:first-child {
+  margin-top: 0;
+}
+
+#header__navbar-menu-checkbox:checked ~ .header__navbar-menu-list {
+  transform: translateX(0);
+}
+/* end header */
+
+/* banner */
+.banner {
+  background: url("./images/about-bg.png") no-repeat;
+  background-size: 100%;
+  padding-top: 45%;
+  position: relative;
+}
+
+.banner .container {
+  position: absolute;
+  top: 50px;
+  bottom: 20px;
+  left: 15%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner__title {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 5px 0;
+  border-bottom: 3px solid var(--primary-color);
+  width: fit-content;
+}
+
+.banner__more-btn {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 150px;
+  outline: none;
+  border: none;
+  margin-top: 16px;
+}
+
+.banner__role {
+  width: var(--width-role);
+  line-height: var(--width-role);
+  text-align: center;
+  color: var(--primary-color);
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 50%;
+  font-weight: 900;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+  font-size: 20px;
+}
+/* end banner */
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: calc(var(--width-role) / 2);
+}
+
+.footer__content {
+  width: 40%;
+  margin: calc(var(--width-role) / 2) auto;
+  text-align: center;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__contact-icon {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.footer__contact-icon-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.4;
+}
+
+.footer__contact-title {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.footer__contact-submit-box,
+.footer__contact-submit-btn {
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.footer__contact-submit-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.footer__contact-icon-border {
+  width: 30px;
+  line-height: 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.footer__copyright {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  color: #666;
+}
+/* end footer */

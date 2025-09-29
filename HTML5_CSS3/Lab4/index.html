@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <form id="form">
+      <!-- account -->
+      <section class="form__account form-group">
+        <h1 class="title">Account</h1>
+        <section class="form__account-group">
+          <div class="container-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <input type="text" placeholder="Full Name" />
+        </section>
+
+        <section class="form__account-group">
+          <div class="container-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <input type="email" placeholder="Email Adress" />
+        </section>
+
+        <section class="form__account-group">
+          <div class="container-icon">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <input type="password" placeholder="Password" />
+        </section>
+      </section>
+      <!-- end account -->
+
+      <!-- date -->
+      <section class="form__date form-group">
+        <h1 class="title">Date of Birth</h1>
+        <section class="form__date-group">
+          <input type="number" min="1" max="31" placeholder="DD" />
+          <input type="number" min="1" max="12" placeholder="MM" />
+          <input type="number" min="1900" max="2023" placeholder="YYYY" />
+        </section>
+      </section>
+      <!-- end date -->
+
+      <!-- gender -->
+      <section class="form__gender form-group">
+        <h1 class="title">Gender</h1>
+        <section class="form__gender-group">
+          <input type="radio" hidden id="male" name="gender" value="Male" />
+          <label for="male" id="male-check">Male</label>
+          <input type="radio" hidden id="female" name="gender" value="Female" />
+          <label for="female" id="female-check">Female</label>
+        </section>
+      </section>
+      <!-- end gender -->
+
+      <!-- payment -->
+      <section class="form__payment form-group">
+        <h1 class="title">Payment details</h1>
+        <section class="form__payment-group">
+          <input
+            type="radio"
+            hidden
+            id="credit"
+            name="payment"
+            value="credit"
+          />
+          <label for="credit" id="credit-check"
+            ><i class="fa-brands fa-cc-visa"></i>Credit Card</label
+          >
+          <input
+            type="radio"
+            hidden
+            id="paypal"
+            name="payment"
+            value="paypal"
+          />
+          <label for="paypal" id="paypal-check"
+            ><i class="fa-brands fa-cc-paypal"></i>Paypal</label
+          >
+        </section>
+
+        <section class="form__payment-group">
+          <div class="container-icon">
+            <i class="fa-regular fa-credit-card"></i>
+          </div>
+          <input type="text" class="card-number" placeholder="Card Number" />
+        </section>
+
+        <section class="form__payment-group">
+          <div class="container-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <input type="text" class="card-cvc" placeholder="Card CVC" />
+          <input type="date" class="date" />
+        </section>
+      </section>
+      <!-- end payment -->
+
+      <!-- term & condition -->
+      <section class="form__term-condition form-group">
+        <h1 class="title">Terms and Conditions</h1>
+        <section class="form__term-condition-group">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"
+            >I accept the terms and conditions for signing up to this service,
+            and hereby confirm I have read privacy policy.</label
+          >
+        </section>
+      </section>
+      <!-- end term & condition -->
+    </form>
+  </body>
+</html>

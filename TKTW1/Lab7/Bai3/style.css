@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-image: url("https://esu-online.org/wp-content/uploads/2022/06/ESU-zdjecie-glowna.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: 100%;
+}
+
+nav {
+  background-color: orangered;
+  padding: 15px 0;
+}
+
+header > nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 30px;
+  padding-left: 10px;
+  box-shadow: 0 0 20px #fff;
+}
+
+header > div {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-variant: small-caps;
+}
+
+header > div > h1 {
+  color: white;
+  text-shadow: 0 0 5px orangered;
+  font-weight: 900;
+}
+
+header > div > h3 {
+  color: orangered;
+  letter-spacing: 2px;
+  border-top: 1px solid orangered;
+}
+
+a {
+  font-variant: small-caps;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav > .right {
+  float: right;
+}

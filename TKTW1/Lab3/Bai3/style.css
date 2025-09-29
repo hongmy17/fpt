@@ -1,0 +1,20 @@
+body {
+  border: 1px solid #000;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+h1 {
+  text-shadow: 5px 5px #ededed;
+}
+
+center + p {
+  text-align: right;
+  margin-right: 10px;
+  font-style: italic;
+}

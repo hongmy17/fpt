@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-variant: small-caps;
+}
+
+header {
+  background: url("https://esu-online.org/wp-content/uploads/2022/06/ESU-zdjecie-glowna.jpg")
+    no-repeat;
+  height: 200px;
+  padding-top: 25px;
+  background-size: 100%;
+  position: relative;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 0 0 5px orangered;
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+}
+
+.menu {
+  background-color: orangered;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000;
+}
+
+.menu > ul {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+}
+
+a {
+  font-size: large;
+  padding: 0 10px;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu > ul > li > a:hover {
+  color: yellow;
+}
+
+li > ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  text-align: left;
+  width: 200px;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+li > ul > li {
+  display: block;
+  border: 1px solid lightgray;
+  border-top-width: 0;
+}
+
+li > ul > li > a {
+  color: orangered;
+}
+
+li > ul > li:hover > a {
+  color: white;
+  display: block;
+  background-color: orangered;
+}
+
+article {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+aside ul {
+  margin: 3px;
+}
+
+aside li {
+  display: block;
+  border: 1px solid #000;
+  list-style-type: none;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-bottom-color: orangered;
+  border-top-color: orangered;
+  padding-left: 30px;
+  background: url("https://pngimg.com/uploads/circle/small/circle_PNG41.png")
+    no-repeat;
+  background-size: auto 70%;
+  background-position: 2% center;
+}
+
+aside a {
+  color: orangered;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  border-top: 3px double orangered;
+  background-color: lightblue;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stye.css" />
+  </head>
+
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="name">
+          <strong>Họ và tên:</strong>
+        </label>
+
+        <input type="text" id="name" tabindex="1" />
+      </div>
+
+      <div class="form-group">
+        <label for="countries">
+          <strong>Quốc tịch:</strong>
+        </label>
+
+        <input type="text" id="countries" value="Viet Nam" readonly />
+      </div>
+
+      <div class="form-group">
+        <label for="note">
+          <strong>Ghi chú:</strong>
+        </label>
+
+        <textarea id="note" cols="30" rows="4" tabindex="2"></textarea>
+      </div>
+
+      <hr />
+      <div class="form-group">
+        <button tabindex="3">
+          <strong>Thêm</strong>
+        </button>
+
+        <button tabindex="4">
+          <strong>Sửa</strong>
+        </button>
+
+        <button disabled>
+          <strong>Xóa</strong>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

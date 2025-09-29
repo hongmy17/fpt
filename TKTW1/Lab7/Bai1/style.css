@@ -1,0 +1,37 @@
+.vmenu {
+  list-style: none;
+}
+
+.vmenu > li {
+  padding: 10px;
+  border: 1px solid lightgray;
+  width: 200px;
+  border-width: 0px 1px;
+  border-bottom: 1px dotted orange;
+}
+
+.vmenu > li:first-child {
+  border-top: 1px solid lightgray;
+  border-radius: 5px 5px 0 0;
+}
+
+.vmenu > li > a {
+  color: orange;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 20px;
+  background-image: url("https://www.seekpng.com/png/full/115-1150203_clip-free-bullet-points-clipart-bullet-point-transparent.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 0 50%;
+  padding-left: 30px;
+}
+
+.vmenu > li:hover {
+  background-color: orangered;
+}
+
+.vmenu > li:hover > a {
+  color: white;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Eo_circle_orange_arrow-right.svg/2048px-Eo_circle_orange_arrow-right.svg.png");
+}

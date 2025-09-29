@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+}
+
+body {
+  padding: 10px;
+}
+
+.name,
+textarea,
+select {
+  width: 98%;
+  padding: 5px;
+}
+
+.gioi-tinh h2,
+.gioi-tinh input {
+  display: inline-block;
+}
+
+.so-thich h2,
+.so-thich input {
+  display: inline-block;
+}
+
+hr {
+  margin: 10px 0;
+}

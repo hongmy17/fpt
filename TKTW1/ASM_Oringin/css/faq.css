@@ -1,0 +1,21 @@
+.content {
+  padding: 80px;
+  background-color: #f9f9f9;
+  height: 500px;
+}
+
+.content-group {
+  width: 33.33%;
+  float: left;
+  padding: 20px;
+  text-align: justify;
+}
+
+.content__question {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.footer {
+  clear: both;
+}

@@ -1,0 +1,48 @@
+body {
+  font-variant: small-caps;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+input,
+textarea {
+  padding: 5px 2px;
+  width: 98%;
+}
+
+input:focus,
+textarea:focus {
+  background: yellow;
+  border-radius: 5px;
+  border-color: orangered;
+  outline: none;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 5px 25px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: orangered;
+  box-shadow: inset 0 0 15px blue;
+}
+
+button:hover,
+button:focus {
+  color: blue;
+  box-shadow: inset 0 0 15px orangered;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: gray;
+  box-shadow: inset 0 0 15px gray;
+  cursor: default;
+}

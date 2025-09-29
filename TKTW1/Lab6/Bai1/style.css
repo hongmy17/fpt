@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container > header {
+  background-image: url("https://change-itn.eu/wp-content/uploads/2018/07/long.jpg");
+  background-size: 100% 100%;
+  height: 100px;
+  padding-bottom: 25px;
+}
+
+.container > nav {
+  text-align: center;
+  color: white;
+  background: #ff2f00;
+  padding: 15px 0;
+}
+
+.container > nav > a {
+  color: white;
+  margin: 0 10px;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.container > nav > a:hover {
+  text-decoration: underline;
+}
+
+.container > article {
+  width: 75%;
+  min-height: 380px;
+  background-color: #fff;
+  float: left;
+}
+
+.container > aside {
+  float: right;
+  min-height: 380px;
+  width: 25%;
+  background-color: lightgray;
+}
+
+.container > aside > ul {
+  margin: 30px 30%;
+}
+
+.container > footer {
+  text-align: center;
+  background-color: lightblue;
+  line-height: 45px;
+  border-top: 3px double orangered;
+  font-variant: small-caps;
+  clear: both;
+}
+
+iframe[name="page"] {
+  width: 100%;
+  min-height: 380px;
+}

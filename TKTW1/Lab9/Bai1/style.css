@@ -1,0 +1,21 @@
+label + input {
+  display: block;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  padding: 10px;
+}
+
+hr {
+  width: 165px;
+  margin: 10px 0;
+}
+
+form input {
+  padding: 5px 0;
+  width: 98%;
+}

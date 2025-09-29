@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 120px;
+  background: #e5e2e2;
+}
+
+nav {
+  background-color: #d3d31f;
+  line-height: 35px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px;
+  line-height: 35px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: gray;
+}
+
+article {
+  min-height: 200px;
+  width: 70%;
+  background: #f5efef;
+  float: left;
+}
+
+aside {
+  min-height: 200px;
+  width: 30%;
+  background-color: #c9c9c9;
+  float: right;
+}
+
+footer {
+  clear: both;
+  background-color: #b7b7b7;
+  height: 40px;
+}

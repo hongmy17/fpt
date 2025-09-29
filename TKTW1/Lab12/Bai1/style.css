@@ -1,0 +1,17 @@
+img {
+  width: 200px;
+  height: 150px;
+  float: left;
+  margin-right: 15px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 110px;
+}
+
+.title {
+  color: rgb(0, 89, 255);
+}

@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://c.wallhere.com/photos/fa/44/nature_landscape_mountains_mist_forest_morning_calm_Taiwan-114637.jpg!d");
+  height: 100vh;
+  padding: 20px 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px 0;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+div {
+  float: right;
+}
+
+center {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 600;
+  height: inherit;
+  display: grid;
+  place-content: center;
+  cursor: default;
+}

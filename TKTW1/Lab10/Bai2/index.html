@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <form action="">
+      <div class="form-group">
+        <label class="block" for="ten">
+          <strong>Họ và tên:</strong>
+        </label>
+
+        <input class="form-control" type="text" id="ten" />
+      </div>
+
+      <div class="form-group">
+        <fieldset>
+          <legend>
+            <strong>Giới tính</strong>
+          </legend>
+
+          <input type="radio" name="gioi-tinh" />
+          <label>
+            <strong>Nam</strong>
+          </label>
+
+          <input type="radio" name="gioi-tinh" />
+          <label>
+            <strong>Nữ</strong>
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <label class="block" for="ngay-sinh">
+          <strong>Ngày sinh:</strong>
+        </label>
+
+        <input class="form-control" type="date" id="ngay-sinh" />
+      </div>
+
+      <div class="form-group">
+        <label class="block" for="diem">
+          <strong>Điểm:</strong>
+        </label>
+
+        <input
+          class="form-control"
+          type="number"
+          min="0"
+          max="10"
+          step="0.25"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="block" for="nn">
+          <strong>Nghề nghiệp:</strong>
+        </label>
+        <input
+          class="form-control"
+          id="nn"
+          name="nghe-nghiep"
+          list="nghe-nghiep"
+        />
+
+        <datalist id="nghe-nghiep">
+          <option value="Giáo viên">Giáo viên</option>
+          <option value="Nông dân">Nông dân</option>
+          <option value="Kỹ sư">Kỹ sư</option>
+          <option value="Bác sĩ">Bác sĩ</option>
+          <option value="Bảo vệ">Bảo vệ</option>
+        </datalist>
+      </div>
+
+      <div class="form-group">
+        <fieldset>
+          <legend>
+            <strong>Sở thích:</strong>
+          </legend>
+
+          <input type="checkbox" />
+          <label>
+            <strong>Thể thao</strong>
+          </label>
+
+          <input type="checkbox" />
+          <label>
+            <strong>Du lịch</strong>
+          </label>
+
+          <input type="checkbox" />
+          <label>
+            <strong>Âm nhạc</strong>
+          </label>
+
+          <input type="checkbox" />
+          <label>
+            <strong>Ẩm thực</strong>
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <label class="block">
+          <strong>Ghi chú:</strong>
+        </label>
+
+        <textarea class="form-control" name="" id="ghi-chu" rows="4"></textarea>
+      </div>
+
+      <hr />
+      <div class="form-group">
+        <button>
+          <strong>Đăng ký</strong>
+        </button>
+
+        <button type="reset">
+          <strong>Nhập lại</strong>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

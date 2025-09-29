@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header&footer.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html"><h1 class="header__title">PIZZA</h1></a>
+
+      <ul class="header__menu">
+        <li>
+          <a href="index.html">TRANG CHỦ</a>
+        </li>
+
+        <li>
+          <a href="about.html">GIỚI THIỆU</a>
+        </li>
+
+        <li>
+          <a href="contact.html" style="color: #000">LIÊN HỆ</a>
+        </li>
+
+        <li>
+          <a href="feedback.html">GÓP Ý</a>
+        </li>
+
+        <li>
+          <a href="faq.html">HỎI ĐÁP</a>
+        </li>
+      </ul>
+    </header>
+
+    <article class="content">
+      <h1 class="content__title">CONTACT US</h1>
+
+      <form class="content__form">
+        <div class="content__form-group">
+          <input
+            type="text"
+            class="content__form-name"
+            placeholder="Name"
+            tabindex="1"
+          />
+
+          <input
+            type="email"
+            class="content__form-email"
+            placeholder="Email"
+            tabindex="2"
+          />
+
+          <input
+            type="text"
+            class="content__form-subject"
+            placeholder="Subject"
+            tabindex="3"
+          />
+        </div>
+
+        <textarea
+          rows="6"
+          class="content__form-message"
+          placeholder="Message"
+          tabindex="4"
+        ></textarea>
+
+        <button class="content__form-submit" tabindex="5">Send</button>
+      </form>
+
+      <div class="content__info">
+        <div class="content__info-address">
+          <h1 class="title">VISIT OUR SHOP</h1>
+
+          <p>
+            <i class="fa fa-map-marker contact-fa icon"> </i> 63 Another Walking
+            Street, BKK 18080
+          </p>
+
+          <p>
+            <i class="fa fa-phone contact-fa icon"></i>
+            <a href="#">010-020-0340</a>,<a href="#">080-090-0660</a>
+          </p>
+
+          <p>
+            <i class="fa-regular fa-envelope icon"></i>
+            <a href="#">hello@company.com</a>
+          </p>
+        </div>
+
+        <div class="content__info-time-open">
+          <h1 class="title">OPENING HOURS</h1>
+
+          <p>
+            <i class="fa-solid fa-clock icon"></i>
+            7:00 AM - 11:00 PM
+          </p>
+
+          <p>
+            <i class="fa-solid fa-bell icon"></i>
+            Monday to Friday and Sunday
+          </p>
+
+          <p>
+            <i class="fa fa-download contact-fa icon"></i>
+            <a href="#">Change Icons</a>
+          </p>
+        </div>
+
+        <div class="content__info-map">
+          <iframe
+            src="https://www.google.com/maps/d/u/1/embed?mid=1fYbFrrR3eRjVewT1I1Dmv2RrmQ8theM&ehbc=2E312F"
+            width="640"
+            height="480"
+          ></iframe>
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">Copyright © 2084 Company Name</footer>
+  </body>
+</html>

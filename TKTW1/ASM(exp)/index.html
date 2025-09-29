@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>blog</title>
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!--fontawesome-->
+  <!-- <link rel="stylesheet" href="js.js"> -->
+  <!-- link angular js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://kit.fontawesome.com/d92ee4de88.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+  <style>
+    .card img {
+      height: 280px;
+    }
+
+    .h1,
+    h1 {
+      font-size: 2.5rem;
+      font-family: 'Lora', serif;
+      color: rgb(229, 190, 92);
+    }
+
+    .title a {
+      text-decoration: none;
+      color: rgb(33, 33, 31);
+      font-family: 'Lora', serif;
+      font-size: 20px;
+    }
+
+    .title a:hover {
+      color: rgb(216, 98, 169);
+    }
+
+    .text {
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    .body {
+
+      padding-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .hr {
+      margin-left: 35%;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body class="bg-light" ng-app="myApp" ng-controller="myCtrl">
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+        <img src="images/shopping-bag-icon.png" alt="site icon">
+        <span class="text-uppercase fw-lighter ms-2">LAVENDER SHOP</span>
+      </a>
+
+      <!-- LOGIN -->
+      <div class="order-lg-2 nav-btns">
+        <button type="button" class="btn position-relative btn-cart"><a href="cart.html">
+            <i class="fa fa-shopping-cart fa-lg fa-fw"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+          </a>
+
+        </button>
+
+        <button type="button" class="btn position-relative  dropdown-toggle" data-bs-toggle="dropdown"
+          data-bs-auto-close="outside">
+          <i class="fa fa-user-circle fa-lg fa-fw"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-login" aria-labelledby="dropdownMenuLink">
+          <li><a class="dr-login" href="admin.html">Đăng
+              Nhập</a>
+          </li>
+          <li><a class="dr-login" href="admin.html">Đăng Ký
+
+            </a> </li>
+        </ul>
+      </div>
+
+      <!-- ////////////////////////////////////////////// -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="index.html">home</a>
+          </li>
+          <!-- DropDown -->
+          <li class="nav-item px-2 py-2 dropdown-mega border-0">
+            <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside">Sản Phẩm</a>
+            <div class="dropdown-menu shadow">
+              <div class="mega-content px-md-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                      <h5>Áo</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="product_t-shirt.html">Áo Thun</a>
+                        <a class="list-group-item" href="product_shirt.html">Áo Sơ Mi</a>
+                        <a class="list-group-item" href="product_twowirecoat.html">Áo Hai Dây & Áo 3 Lỗ</a>
+                        <a class="list-group-item" href="product_coat.html">Áo Khoác</a>
+
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                      <h5>Váy & Đầm</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="product_Dresses.html">Váy</a>
+                        <a class="list-group-item" href="product_Dresses2.html">Đầm</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                      <h5>Quần</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="product_short.html">Quần Short/Quần Đùi</a>
+                        <a class="list-group-item" href="product_jean.html">Quần Jean</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                      <h5>Sản Phẩm Khác</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="product_sleepwear.html">Đồ Ngủ</a>
+
+                        <a href="product_accessory.html" class="list-group-item">Phụ kiện</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--  -->
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="discount.html">giảm giá</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="blogs.html">blogs</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link text-uppercase text-dark" href="contact.html">liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- body -->
+  <div class="body" >
+    <div class="container">
+      <div class="text-center my-5 text-uppercase">
+        <h1>blog & review</h1>
+        <hr class="hr">
+      </div>
+
+      <div class="row" >
+        <div class="col-lg-4 col-md-6 col-sm-12"  ng-repeat="item in items">
+          <div class="card mb-5 shadow-sm"  >
+            <img ng-src="{{item.images}}" class="img-fluid" />
+            <div class="card-body">
+              <div class="card-title title"> 
+                <a href="">{{item.title}}</a>
+              </div>
+              <div class="card-text">
+                <p>
+                {{item.der}}
+                </p>
+              </div>
+              <!-- <a href="#" class="btn btn-outline-primary rounded-0 float-end">Xem Thêm...</a> -->
+            </div>
+          </div>
+          <h1>{{msg}}</h1>
+        </div>
+
+    
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="bg-dark py-5 footer mt-5">
+    <div class="container">
+      <div class="row text-white g-4">
+        <div class="col-md-6 col-lg-3">
+          <a class="text-uppercase text-decoration-none brand text-white" href="index.html">LAVENDER</a>
+          <p class="text-white text-muted mt-3">Với phương châm "Chất lượng thật - Giá trị thật”, <a class="text"
+              href="index.html">Lavender.vn</a> luôn nỗ lực không ngừng nhằm nâng cao chất
+            lượng
+            sản
+            phẩm & dịch vụ để khách hàng có được những trải nghiệm mua sắm tốt nhất.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h5 class="fw-light">Links</h5>
+          <ul class="list-unstyled">
+            <li class="my-3">
+              <a href="index.html" class="text-white text-decoration-none text-muted">
+                <i class="fas fa-chevron-right me-1"></i> Home
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none text-muted">
+                <i class="fas fa-chevron-right me-1"></i> Sản Phẩm
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="discount.html" class="text-white text-decoration-none text-muted">
+                <i class="fas fa-chevron-right me-1"></i> Giảm Giá
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="blogs.html" class="text-white text-decoration-none text-muted">
+                <i class="fas fa-chevron-right me-1"></i> Blogs
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="contact.html" class="text-white text-decoration-none text-muted">
+                <i class="fas fa-chevron-right me-1"></i> Liên Hệ
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h5 class="fw-light mb-3">Liên Hệ</h5>
+          <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+            <span class="me-3">
+              <i class="fas fa-map-marked-alt"></i>
+            </span>
+            <span class="fw-light">
+              132/5, Đường 3 Tháng 2, Phường An Khánh, Ninh Kiều, Cần Thơ
+            </span>
+          </div>
+          <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+            <span class="me-3">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="fw-light">
+              lavendershop@gmail.com
+            </span>
+          </div>
+          <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+            <span class="me-3">
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span class="fw-light">
+              +9788 6077 296
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h5 class="fw-light mb-3">Follow Us</h5>
+          <div>
+            <ul class="list-unstyled d-flex">
+              <li>
+                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-nameshop">
+          <hr>
+          <p>2023 - By LAVENDER SHOP</p>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  <!-- lệnh angular js -->
+  <!-- <script src="database/blogs.js"></script> -->
+   <script>
+     var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope, $http) {
+            $scope.items =[];
+            // $http.get("database/blogs.js").then(function(response) {
+            //     $scope.items = response.data;
+            // });
+            $http.get("database/list.json").then((result) => {  
+                if(result.status === 200){
+
+                    $scope.items = result.data;
+                    console.log($scope.items)
+                }else{
+                  $scope.msg = 'Không tìm thấy';
+                }
+            }).catch((err) => {
+                $scope.msg = 'Không tìm thấy';
+            });
+
+            $scope.parJson = function (json) {
+              return angular.fromJson(json);
+            }
+        });
+   </script>
+  <!-- end of footer -->
+  <!-- jquery -->
+  <script src="js/jquery-3.6.0.js"></script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <!-- bootstrap js -->
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
